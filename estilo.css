@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* globais  */
+
+.limite-secao{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.espaco-inferior{
+    margin-bottom: 20px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* topo  */
+.topo-secao h1{
+    font-size: 22px;
+    padding: 10px;
+}
+
+/* banner  */
+.banner-fundo{
+    background-image: url(img/capa.jpg);
+    height: 400px;
+    background-size: cover;
+    
+}
+
+.banner h2{
+    text-align: right;
+    color: #fff;
+    font-size: 22px;
+}
+
+.banner{
+    /* background-color: black; */
+    padding: 50px 20px;
+    background: #00000085;
+}
+
+/* sobre  */
+.sobre-texto {
+    margin: 40px 0;
+    
+}
+
+.sobre-texto h2,p{
+    margin: 20px 0;
+}
+
+.sobre-borda-lateral p{
+    border-left: 2px solid #000000;
+    padding-left: 10px;
+}
+
+
+/* contato */
+.contato{
+    background-color: #d92121;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.contato h2{
+    color: #fff;
+    background-color:#6c0000;
+    /* width: 100vw; */
+    text-align: center;
+}
+
+/* formulario */
+.form-texto h3{
+    margin-bottom: 20px;
+}
+
+.form-texto p{
+    margin: 0;
+}
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+label,input, select{
+    width: 98%;
+    margin: 0 auto;
+}
+
+button{
+    width: 100%;
+    background: #d92121;
+    color: #fff;
+    padding: 10px;
+}
+
+fieldset{
+    margin: 20px 0;
+}
+
+ label,input,select {
+    margin: 5px;
+}
+
+legend{
+    margin: 0 10px;
+    padding:0px 5px;
+}
+
+/* footer */
+.rodape-fundo{
+    background-color: #ccc8c8;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.rodape-texto{
+    text-align: center;
+    color: #d92121;
+}
+
+strong{
+    font-weight: 500;
+}
+
+@media(max-width: 815px)
+{
+  figure {
+      display: flex;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+}
