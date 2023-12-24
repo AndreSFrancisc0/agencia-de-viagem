@@ -4,121 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluCar - Aluguel de Carros</title>
+    <title>Agência de viagens</title>
+    <meta name="description" content="A agência de viagens encontra o hotel ideal para você!">
     <link rel="stylesheet" href="estilo.css">
-    <meta name="description" content="Aqui é a descrição">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
 </head>
-<!-- topo -->
 
 <body>
-    <header class="topo-secao">
-        <div class="limite-secao">
-            <h1>AluCar</h1>
+    <header class="topo-fundo">
+        <div class="limite-secao topo-logo">
+            <img src="assets/imagens/local-logo.png" alt="logo">
+            <p>Agência de Viagens</p>
         </div>
     </header>
-    <!-- banner -->
-    <section class="banner-fundo">
-        <div class="banner">
-            <div class="limite-secao">
-                <h2>AluCar</h2>
-                <h2>Aluguel de Carros</h2>
+
+    <main class="ofertas-fundo ">
+        <section class="form-fundo form-estilo">
+            <div class="form-estilo limite-secao">
+                <div class=" form-titulo">
+                    <img src="assets/imagens/aviao.png" alt="aviao">
+                    <h2>Solicite um orçamento</h2>
+                </div>
+                <div class=" form-corpo">
+                    <h2>Informe seus dados</h2>
+                    <form class="form-flex-y" method="post"
+                        action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Nome completo" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Email para contato" required>
+                        <label for="celular">Celular</label>
+                        <input id="celular" type="cel" name="celular" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                            placeholder="(xx)xxxxx-xxxx" required>
+                        <div class="form-flex-x">
+                            <div class="form-flex-x-div">
+                                <label for="ida">Data de ida</label>
+                                <input id="ida" type="date" name="partida">
+                            </div>
+                            <div class="form-flex-x-div">
+                                <label for="volta">Data de volta</label>
+                                <input id="volta" type="date" name="chegada">
+                            </div>
+                        </div>
+                        <div class="form-flex-x">
+                            <div>
+                                <label for="origem">Origem</label>
+                                <select id="origem" name="origem">
+                                    <option disabled selected>Partindo de</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="destino">Destino</label>
+                                <select name="destino" id="destino">
+
+                                    <option disabled selected>Indo para</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="">Quarto com cama infantil?</label>
+                        <div class="form-flex-checkbox">
+                            <div class="flex">
+                                <input type="radio" name="infantil" id="infantil-sim" value="s" required>
+                                <label for="infantil-sim ">Sim</label>
+                            </div>
+                            <div class="flex">
+                                <input type="radio" name="infantil" id="infantil-nao" value="n">
+                                <label for="infantil-não ">Não</label>
+                            </div>
+                        </div>
+                        <label for="">Preferências de hospedagem:</label>
+                        <div class="form-flex-checkbox2">
+                            <div class="flex">
+                                <input type="checkbox" name="preferencias[]" value="piscina" id="piscina">
+                                <label for="piscina">Piscina</label>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" name="preferencias[]" value="wifi" id="wifi">
+                                <label for="wifi">Wi-Fi</label>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" name="preferencias[]" value="garagem" id="garagem">
+                                <label for="garagem">Garagem</label>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" name="preferencias[]" value="suite" id="suite">
+                                <label for="suite">Suite</label>
+                            </div>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
+                </div>
+                </form>
             </div>
-        </div>
-    </section>
-    <!-- sobre  -->
-    <section class="limite-secao">
-        <div class="sobre-texto">
-            <h2>Sobre nós</h2>
-            <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação.
-                Temos os melhores preços e modelos do mercado.</p>
-
-            <figure>
-                <img src="img/img1.jpg " alt="CARRO1">
-                <img src="img/img2.jpg" alt="carro2">
-                <img src="img/img3.jpg" alt="carro3">
-            </figure>
-            <div class="sobre-borda-lateral">
-                <p>O compromisso da AluCar é com a qualidade.</p>
-                <p>Os melhores carros estão aqui!</p>
-                <p>Assistência 24hrs.</p>
-            </div>
-    </section>
-
-    <div class="contato">
-        <h2>Contato</h2>
-    </div>
-
-    <main class="limite-secao">
+        </section>
         <section>
-            <div class="form-texto">
-                <h3>Análise de cadastro</h3>
-                <p>Preencha os campos abaixo e analisaremos seus dados.</p>
-                <p>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+            <div class="ofertas limite-secao">
+                <h2><strong>Ofertas</strong></h2>
+                <p>Com até <span>50%</span> de desconto</p>
+                <div class="ofertas-secao">
+                    <figure class="ofertas-secao-img">
+                        <img src="assets/imagens/rio.jpg" alt="foto-rio-de-janeiro">
+                        <p class="ofertas-legenda">Rio de Janeiro</p>
+                    </figure>
+                    <figure class="ofertas-secao-img2">
+                        <div class="secao-container">
+                            <img src="assets/imagens/manaus.jpg" alt="foto-manaus">
+                            <p class="ofertas-legenda">Manaus</p>
+                        </div>
+                        <div class="secao-container">
+                            <img src="assets/imagens/saopaulo.jpg" alt="foto-sao-paulo">
+                            <p class="ofertas-legenda">São Paulo</p>
+                        </div>
+                        <div class="secao-container">
+                            <img src="assets/imagens/niteroi.jpg" alt="foto-niteroi">
+                            <p class="ofertas-legenda">Rio de Janeiro</p>
+                        </div>
+                        <div class="secao-container">
+                            <img src="assets/imagens/maranhao.jpg" alt="foto-maranhao">
+                            <p class="ofertas-legenda">Maranhão</p>
+                        </div>
+                    </figure>
+                </div>
             </div>
-            <div class="espaco-inferior"></div>
-            <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
-                <fieldset class="form-flex">
-                    <legend>Dados Pessoais</legend>
-
-                    <label>Nome</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome">
-
-                    <label>Data de nascimento</label>
-                    <input type="date" name="data">
-
-
-                    <label>Telefone</label>
-                    <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx">
-                    <div class="espaco-inferior"></div>
-                </fieldset>
-
-                <fieldset class="form-flex">
-
-                    <legend>CNH</legend>
-
-                    <label>Número do Registro</label>
-                    <input type="number" name="numero_cnh" placeholder="Informe o nº da sua CNH">
-
-                    <label for="">Validade</label>
-                    <input type="date" name="data_cnh">
-                    <div class="espaco-inferior"></div>
-                </fieldset>
-
-                <fieldset class="form-flex">
-                    <legend>Carros</legend>
-
-                    <label for="">Modelo do carro:</label>
-                    <select name="carro" id="" required>
-                        <option selected value="">Escolha o carro</option>
-                        <optgroup label="Volkswagem">
-                            <option value="gol">Gol</option>
-                            <option value="golf">Golf</option>
-                            <option value="fox">Fox</option>
-                        </optgroup>
-                        <optgroup label="Fiat">
-                            <option value="uno">Uno</option>
-                            <option value="siena">Siena</option>
-                            <option value="Palio">Palio</option>
-                        </optgroup>
-                        <optgroup label="Nissan">
-                            <option value="frontier">Frontier</option>
-                            <option value="versa">Versa</option>
-                            <option value="skyline">Skyline GT-R</option>
-                        </optgroup>
-
-
-                    </select>
-                    <div class="espaco-inferior"></div>
-                </fieldset>
-                <button type="submit">Enviar</button>
-
-            </form>
+        </section>
+        <section class="ofertas limite-secao">
+            <h2>Explore a natureza</h2>
+            <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+            <div class="anuncio-secao">
+                <div class="anuncio-secao-card ">
+                    <img src="assets/imagens/lencol.jpg" alt="Lençois-Maranhenses">
+                    <div class="anuncio-secao-card-texto">
+                        <h3>Lençois Maranhenses, Brasil</h3>
+                        <p>Ida e volta a partir de R$79,00</p>
+                    </div>
+                </div>
+                <div class="anuncio-secao-card">
+                    <img src="assets/imagens/goias.jpg" alt="foto-Goias">
+                    <div class="anuncio-secao-card-texto">
+                        <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                        <p>Ida e volta por 139,00</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer class="rodape-fundo">
-        <div class="rodape-texto">
-            <strong>Copyright 2023 - AluCar</strong>
+    <footer>
+        <div class="limite-secao rodape">
+            <div class="rodape-estilo">
+                <h2>Contato</h2>
+                <div class="rodape-estilo-icon">
+                    <img src="assets/imagens/local.png" alt="">
+                    <a href="https://maps.app.goo.gl/Gzv42rCKUCaBEji28" target="_blank"><span>Rio
+                            deJaneiro,RJ</span></a>
+                </div>
+                <div class="rodape-estilo-icon"><img src="assets/imagens/telefone.png" alt=""><a
+                        href="tel:+5521995566889"><span>Telefone:(21)99999-9999</span></a>
+                </div>
+                <div class="rodape-estilo-icon"><img src="assets/imagens/email.png" alt=""><a
+                        href="mailto:suporte@exemplo.com"><span>Email:contato@agencia.com.br</span></a>
+                </div>
+            </div>
+            <div class="rodape-estilo">
+                <h2>Nossas Redes Sociais</h2>
+                <div class="rodape-estilo-icon"><img src="assets/imagens/fb.png" alt=""><a
+                        href="https://www.facebook.com/?locale=pt_BR" target="_blank"><span>AgenciaDeViagem</span></a>
+                </div>
+                <div class="rodape-estilo-icon"><img src="assets/imagens/ig.png" alt=""><a
+                        href="https://www.instagram.com/" target="_blank"><span>@AgenciaDeViagem</span></a>
+                </div>
+                <div class="rodape-estilo-icon"><img src="assets/imagens/tt.png" alt=""><a
+                        href="https://twitter.com/i/flow/login" target="_blank"><span>@AgenciaDeViagem</span></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
